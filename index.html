@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Web 3</title>
+    <style>
+        .container {
+            width: 60%;
+            margin: 0 auto;
+        }
+
+        fieldset {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        input,
+        select {
+            margin-bottom: 10px;
+        }
+
+        .file {
+            display: flex;
+            margin: 10px 0;
+        }
+
+        .file label {
+            margin-right: 5px;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+        }
+
+        .btn button {
+            margin: 0 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <fieldset>
+            <legend>Data Diri</legend>
+            <label for="nama">Nama Lengkap*</label>
+            <input type="text" name="nama" id="nama" placeholder="Nama Lengkap Anda">
+
+            <label for="ttl">Tempat Tanggal lahir*</label>
+            <div>
+                <input type="text" placeholder="Tempat Lahir Anda">
+                <input type="date">
+            </div>
+
+            <label for="email">Email*</label>
+            <input type="email" placeholder="Email Anda">
+
+            <label for="no-wa">No WA*</label>
+            <input type="text" placeholder="08983289382">
+
+            <label for="jenis_kelamin">Jenis Kelamin*</label>
+            <div>
+                <input type="radio" name="" id="" value="L">Laki-Laki
+                <input type="radio" name="" id="" value="P">Perempuan
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Informasi Terkait Pekerjaan</legend>
+            <label for="posisi">Melamar Untuk Posisi</label>
+            <select name="" id="">
+                <option value="posisi" disabled selected>Pilih Posisi</option>
+                <optgroup label="Department Keuangan">
+                    <option value="akuntan">Akuntan</option>
+                    <option value="auditor">Auditor</option>
+                </optgroup>
+                <optgroup label="Department Sistem Informasi">
+                    <option value="analisis">Analisi</option>
+                    <option value="fe">Front End Programmer</option>
+                    <option value="be">Back End Programmer</option>
+                    <option value="db">Database Administrator</option>
+                </optgroup>
+            </select>
+
+            <label for="motivasi">Motivasi Bekerja disini*</label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+
+
+            <div class="file">
+                <label for="upload">Upload CV Anda</label>
+                <input type="file" name="" id="">
+
+            </div>
+            <div class="upload">
+                <label for="upload-progress">Uploading Progress</label>
+                <progress id="file" value="75" max="100"> 32% </progress>
+
+            </div>
+        </fieldset>
+
+        <div class="btn">
+            <button type="submit">Simpan</button>
+            <button type="reset">Batal</button>
+        </div>
+    </div>
+</body>
+
+</html>
